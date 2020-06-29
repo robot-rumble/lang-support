@@ -1,5 +1,5 @@
-def _robot(state, unit, debug):
+def robot(state, unit, debug):
     if state.turn % 2 == 0:
-        return move(Direction.East)
+        return Action.move(Direction.East)
     else:
-        return attack(Direction.South)
+        return Action.attack(Direction.South)
